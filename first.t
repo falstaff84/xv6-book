@@ -691,7 +691,7 @@ we will reexamine this in Chapter \*[CH:TRAP].
 The stack pointer 
 .register esp
 is set to the process's largest valid virtual address,
-.code p->sz .
+which equals page size (4096) since that is the size of the first process.
 The instruction pointer is set to the entry point
 for the initcode, address 0.
 .PP
